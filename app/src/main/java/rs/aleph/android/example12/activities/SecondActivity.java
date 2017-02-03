@@ -7,8 +7,10 @@ import android.os.Bundle;
 import android.provider.MediaStore;
 import android.view.View;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.ListView;
+import android.widget.RatingBar;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -19,6 +21,7 @@ import java.util.List;
 import java.util.Locale;
 
 import rs.aleph.android.example12.R;
+import rs.aleph.android.example12.model.Jelo;
 import rs.aleph.android.example12.provider.JeloProvider;
 import rs.aleph.android.example12.provider.KategorijaProvider;
 import rs.aleph.android.example12.provider.SastojakProvider;
@@ -87,6 +90,10 @@ public class SecondActivity extends Activity {
 
         TextView tvCena = (TextView) findViewById(R.id.tv_cena);
         tvCena.setText(String.format(Locale.getDefault(), getString(R.string.jelo_price),JeloProvider.getJeloById(position).getCena()));
+
+        RatingBar rbRating = (RatingBar) findViewById(R.id.rb_rating);
+        rbRating.setRating(JeloProvider.getJeloById(position).getRating());
+
 
 
     }

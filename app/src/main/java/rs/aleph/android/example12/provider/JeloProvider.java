@@ -31,7 +31,7 @@ public class JeloProvider {
         Jelo rezultat;
         switch (id) {
             case 0: {
-                rezultat = new Jelo(0, "two-heads-of-broccolii.jpg", "Broccoli", "Vegetable good for kids", k1, 100, BigDecimal.valueOf(1000));
+                rezultat = new Jelo(0, "two-heads-of-broccoli.jpg", "Broccoli", "Vegetable good for kids", k1, 100, BigDecimal.valueOf(1000));
                 rezultat.getSastojci().add(new Sastojak(0, "Sastojak 1 za Broccoli", rezultat));
                 rezultat.getSastojci().add(new Sastojak(1, "Sastojak 2 za Broccoli", rezultat));
                 break;
@@ -45,7 +45,7 @@ public class JeloProvider {
                 break;
             }
             case 2: {
-                rezultat = new Jelo(2, "strawberies.jpg", "Strawberies", "Goes good with whipped cream", k2, 300.30, BigDecimal.valueOf(3000));
+                rezultat = new Jelo(2, "strawberry.jpg", "Strawberies", "Goes good with whipped cream", k2, 300.30, BigDecimal.valueOf(3000));
                 break;
             }
             case 3: {

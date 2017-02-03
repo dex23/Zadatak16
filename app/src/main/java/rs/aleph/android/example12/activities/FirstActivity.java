@@ -15,7 +15,7 @@ import rs.aleph.android.example12.R;
 import rs.aleph.android.example12.provider.JeloProvider;
 
 // Each activity extends Activity class
-public class FirstActivity extends Activity {
+public class  FirstActivity extends Activity {
 
 	// onCreate method is a lifecycle method called when he activity is starting
 	@Override

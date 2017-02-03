@@ -16,6 +16,7 @@ public class Jelo {
     private String naziv;
     private String opis;
     private Kategorija kategorija;
+    private float rating;
 
     private List<Sastojak> sastojci;
 
@@ -84,6 +85,14 @@ public class Jelo {
 
     public void setCena(BigDecimal cena) {
         this.cena = cena;
+    }
+
+    public float getRating() {
+        return rating;
+    }
+
+    public void setRating(float rating) {
+        this.rating = rating;
     }
 
     public Jelo() {
